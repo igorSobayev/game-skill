@@ -15,6 +15,7 @@ import { CrearComponent } from './componentes/administracion/crear/crear.compone
 import { FooterComponent } from './componentes/footer/footer.component';
 import { JuegosComponent } from './componentes/juegos/juegos.component';
 import { PantallaJuegoComponent } from './componentes/juegos/pantalla-juego/pantalla-juego.component';
+import { CoincidenciasComponent } from './componentes/administracion/buscar/coincidencias/coincidencias.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PantallaJuegoComponent } from './componentes/juegos/pantalla-juego/pant
     CrearComponent,
     FooterComponent,
     JuegosComponent,
-    PantallaJuegoComponent
+    PantallaJuegoComponent,
+    CoincidenciasComponent
   ],
   imports: [
     BrowserModule,
