@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { JuegoService } from './../../servicios/juego.service';
+import { Juego } from '../Juego';
 
 @Component({
   selector: 'app-indice',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndiceComponent implements OnInit {
 
-  constructor() { }
+  constructor(private juegoSer: JuegoService) {
+   }
 
   ngOnInit() {
+
   }
+
 
 }
