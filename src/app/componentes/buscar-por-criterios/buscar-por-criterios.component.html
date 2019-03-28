@@ -10,5 +10,10 @@
   </select>
   <button>buscar</button>
 </form>
-<app-ultimos></app-ultimos>
-<app-novedades></app-novedades>
+<app-aside></app-aside>
+<div class="buscador" *ngIf="buscando">
+
+  <app-ultimos></app-ultimos>
+  <app-novedades></app-novedades>
+
+</div>

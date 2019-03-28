@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuscarPorCriteriosComponent implements OnInit {
 
+  buscando: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

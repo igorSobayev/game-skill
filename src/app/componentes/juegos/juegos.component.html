@@ -1,6 +1,10 @@
-<div class="juego">
-  <h1>foto del juego</h1>
-  <button>jugar</button>
+<div *ngFor="let dato of datos">
+  <img src="{{ dato.imagen }}" alt="">
+  <h1>{{ dato.titulo }}</h1>
+  <p>{{ dato.imagen }}</p>
+  <p>{{ dato.descripcion }}</p>
+  <p>Votos positivos: {{ dato.vpositivos }}</p>
+  <p>Votos negativos: {{ dato.vnegativos }}</p>
 </div>
 <div class="juego">
   <h1>foto del juego</h1>
@@ -18,5 +22,8 @@
   <h1>foto del juego</h1>
   <button>jugar</button>
 </div>
-
+<div class="juego">
+  <h1>foto del juego</h1>
+  <button>jugar</button>
+</div>
 <app-pantalla-juego></app-pantalla-juego>
