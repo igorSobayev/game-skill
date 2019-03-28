@@ -1,0 +1,60 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(149, 149, 241);
+    width: 100%;
+    /* margin-top: -10px; */
+    margin: -10px auto 0 auto;
+}
+
+.logo {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    cursor: pointer;
+    letter-spacing: 10px;
+}
+
+.titulo {
+    cursor: pointer;
+    transition: all 0.7s;
+}
+
+.titulo:hover {
+    color: rgb(255, 238, 0);
+}
+
+.titulo h1 {
+    margin: 0 0 0 15px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 20%;
+    height: 100%;
+}
+
+.elemento {
+    font-size: 2em;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.elemento:hover {
+    background-color: white;
+}
+
+.logo-skills h1 {
+    cursor: pointer;
+}

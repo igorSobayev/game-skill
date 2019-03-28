@@ -1,0 +1,39 @@
+.foto-bienvenida {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    height: 800px;
+    background-color: blue;
+}
+
+.body-indice {
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.promocion {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    background-color: white;
+    height: 500px;
+}
+
+.foto-promocion {
+    width: 50%;
+}
+
+.datos-promocion {
+    width: 50%;
+}
+
+.animacion {
+    width: 30%;
+    background-color: red;
+}
+
+.titulo-indice-body {
+    margin: 30px auto 30px auto;
+}

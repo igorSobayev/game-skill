@@ -1,4 +1,31 @@
-<h1>Indice</h1>
+<div class="foto-bienvenida">
+    <h1>Game Skill</h1>
+    <small>Falta la foto del fondo</small>
+    <h3>Viaja al pasado con nosotros</h3>
+    <div class="opciones-titulo">
+        <button routerLink="/buscarCriterio">Buscar juegos</button>
+        <button routerLink="/juegos">Jugar</button>
+    </div>
+</div>
+<h1 class="titulo-indice-body">Titulo del índice</h1>
+<div class="body-indice">
+    <div class="promocion">
+        <div class="foto-promocion">
+            <h3>Foto del juego promocion</h3>
+        </div>
+        <div class="datos-promocion">
+            <h3>Juego promocionado</h3>
+            <p>Algun dato</p>
+            <p>Algun dato</p>
+            <p>Algun dato</p>
+            <p>Algun dato</p>
+        </div>
+    </div>
+    <div class="animacion">
+        <h3>Animacion</h3>
+    </div>
+</div>
+<h1>Indice de algunos juegos traidos del servidor</h1>
 <ul>
     <li *ngFor="let dato of datos">{{ dato.titulo }}</li>
 </ul>
