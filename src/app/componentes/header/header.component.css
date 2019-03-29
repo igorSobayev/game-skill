@@ -1,4 +1,4 @@
-
+/* Estilos para el menú principal */
 .header {
     display: flex;
     justify-content: space-between;
@@ -16,9 +16,26 @@
     justify-content: space-between;
 }
 
+.logo-imagen {
+    background-image: url("./../../../assets/resources/img/logo.png");
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
 .logo h1 {
     cursor: pointer;
     letter-spacing: 10px;
+}
+
+.logo-skills-imagen {
+    background-image: url("./../../../assets/resources/img/spain_skills_logo.png");
+    background-position: center;
+    background-size: cover;
+    width: 142px;
+    height: 100px;
 }
 
 .titulo {
@@ -57,4 +74,10 @@
 
 .logo-skills h1 {
     cursor: pointer;
+}
+
+@media (max-width: 1150px) {
+    .menu {
+        width: 40%;
+    }
 }

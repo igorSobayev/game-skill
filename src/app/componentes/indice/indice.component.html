@@ -1,31 +1,52 @@
+<!-- Contenedor de la foto de bienvenida con el texto -->
 <div class="foto-bienvenida">
-    <h1>Game Skill</h1>
-    <small>Falta la foto del fondo</small>
-    <h3>Viaja al pasado con nosotros</h3>
-    <div class="opciones-titulo">
-        <button routerLink="/buscarCriterio">Buscar juegos</button>
-        <button routerLink="/juegos">Jugar</button>
+    <div class="contenedor-elementos-titulo">
+        <h1>Game Skill</h1>
+        <div class="opciones-titulo">
+            <button routerLink="/buscarCriterio" class="boton">Buscar</button>
+            <button routerLink="/juegos" class="boton boton-verde">Jugar</button>
+        </div>
     </div>
 </div>
-<h1 class="titulo-indice-body">Titulo del índice</h1>
+<!-- Fin contenedor foto bienvenida -->
+<!-- Contenedor del body -->
+<h1 class="titulo-indice-body">Juegos en promoción</h1>
 <div class="body-indice">
     <div class="promocion">
         <div class="foto-promocion">
-            <h3>Foto del juego promocion</h3>
+            <!-- En este contenedor se inserta la foto -->
+            <div class="contenedor-foto" (click)="cambiarFoto()">
+            </div>
         </div>
+        <!-- Aqui se insertan los datos del juego -->
         <div class="datos-promocion">
-            <h3>Juego promocionado</h3>
-            <p>Algun dato</p>
-            <p>Algun dato</p>
-            <p>Algun dato</p>
-            <p>Algun dato</p>
+            <div class="contenedor-texto-datos"></div>
+            <div class="contenedor-boton">
+                <button (click)="cambiarFoto()" class="boton">Otro juego</button>
+            </div>
         </div>
-    </div>
-    <div class="animacion">
-        <h3>Animacion</h3>
     </div>
 </div>
-<h1>Indice de algunos juegos traidos del servidor</h1>
+<!-- Contenedor de la animación -->
+<h1 class="titulo-indice-body">El mago</h1>
+<div class="contenedor-juego">
+    <div class="contenedor-animacion" (click)="empezarJuego()">
+        <img src="./../../..//assets/resources/img/Sprite_Right.gif" alt=""
+            class="mago">
+    </div>
+    <div class="contenedor-instrucciones"><h3>Instrucciones</h3>
+    <p>Las instrucciones son sencillas, recoge todas las setas en menos de un minuto
+        y ¡ganaras!</p>
+        <ul>
+            <li>Flecha hacia arriba para subir</li>
+            <li>Flecha a la derecha para moverte a la derecha</li>
+            <li>Flecha hacia abajo para bajar</li>
+            <li>Flecha a la izquierda para moverte a la izquierda</li>
+        </ul>
+    </div>
+</div>
+<!-- Fin del contenedor del body -->
+<!-- <h1>Indice de algunos juegos traidos del servidor</h1>
 <ul>
     <li *ngFor="let dato of datos">{{ dato.titulo }}</li>
-</ul>
+</ul> -->

@@ -1,0 +1,17 @@
+.body-busqueda {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body {
+    width: 80%;
+    text-align: center;
+}
+
+.aside {
+    width: 20%;
+}
+
+.boton-busqueda {
+    margin: 20px;
+}

@@ -1,19 +1,29 @@
-<form action="">
-  busqueda por categoria
-  <select name="" id="">
-    <option value="">Temática</option>
-    <option value="">Temática</option>
-    <option value="">Temática</option>
-    <option value="">Temática</option>
-    <option value="">Temática</option>
-    <option value="">Temática</option>
-  </select>
-  <button>buscar</button>
-</form>
-<app-aside></app-aside>
-<div class="buscador" *ngIf="buscando">
+<div class="contenedor-busqueda">
+  <div class="body-busqueda">
+    <div class="body">
+      <h1 class="titulo-busqueda">Busqueda personalizada</h1>
+      <form action="">
+        <p>Puedes buscar juegos por categorías</p>
+        <select name="" id="">
+          <option value="">Temática</option>
+          <option value="">Temática</option>
+          <option value="">Temática</option>
+          <option value="">Temática</option>
+          <option value="">Temática</option>
+          <option value="">Temática</option>
+        </select>
+        <br>
+        <button class="boton boton-busqueda">Buscar</button>
+      </form>
+    </div>
+    <div class="aside">
+      <app-aside></app-aside>
+    </div>
 
-  <app-ultimos></app-ultimos>
-  <app-novedades></app-novedades>
+    <div class="buscador" *ngIf="buscando">
+      <app-ultimos></app-ultimos>
+      <app-novedades></app-novedades>
+    </div>
 
+  </div>
 </div>

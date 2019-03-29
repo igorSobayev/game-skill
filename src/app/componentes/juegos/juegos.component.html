@@ -1,29 +1,12 @@
-<div *ngFor="let dato of datos">
-  <img src="{{ dato.imagen }}" alt="">
-  <h1>{{ dato.titulo }}</h1>
-  <p>{{ dato.imagen }}</p>
-  <p>{{ dato.descripcion }}</p>
-  <p>Votos positivos: {{ dato.vpositivos }}</p>
-  <p>Votos negativos: {{ dato.vnegativos }}</p>
+<div class="contenedor-pantalla-juegos">
+  <h1>Todos los juegos</h1>
+  <div class="juegos">
+    <div class="juego" *ngFor="let juego of juegos">
+      <img src='{{ juego.url }}' alt="">
+      <h2>{{ juego.titulo }}</h2>
+      <p>{{ juego.descripcion }}</p>
+      <button class="boton boton-verde">Jugar</button>
+    </div>
+  </div>
+
 </div>
-<div class="juego">
-  <h1>foto del juego</h1>
-  <button>jugar</button>
-</div>
-<div class="juego">
-  <h1>foto del juego</h1>
-  <button>jugar</button>
-</div>
-<div class="juego">
-  <h1>foto del juego</h1>
-  <button>jugar</button>
-</div>
-<div class="juego">
-  <h1>foto del juego</h1>
-  <button>jugar</button>
-</div>
-<div class="juego">
-  <h1>foto del juego</h1>
-  <button>jugar</button>
-</div>
-<app-pantalla-juego></app-pantalla-juego>

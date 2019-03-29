@@ -1,0 +1,35 @@
+.juegos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 30px;
+    text-align: center;
+}
+
+.juego img {
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; 
+}
+
+.juego {
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.juego h2, p, button {
+    margin: 20px;
+}
+
+@media (max-width: 1150px) {
+    .juegos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 815px) {
+    .juegos {
+        grid-template-columns: 1fr;
+    }
+}
