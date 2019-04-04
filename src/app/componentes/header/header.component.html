@@ -1,17 +1,18 @@
 <!-- Menú principal -->
 <header class="header">
-  <div class="logo">
-    <div class="logo-imagen" routerLink="/indice"></div>
-    <div class="titulo" routerLink="/indice">
-      <h1>GAME</h1>
-      <h1>SKILL</h1>
+    <div class="logo">
+      <div class="logo-imagen" routerLink="/indice"></div>
     </div>
-  </div>
-  <div class="menu">
-    <div class="elemento" routerLink="/buscarCriterio"><p>Buscar</p></div>
-    <div class="elemento" routerLink="/juegos"><p>Jugar</p></div>
-  </div>
-  <div class="logo-skills">
-    <div class="logo-skills-imagen"></div>
-  </div>
+    <div class="titulo" routerLink="/indice">
+      <h1><span id="game">game</span> <span id="skill">skill</span></h1>
+    </div>
+    <div class="logo-skills">
+      <div class="logo-skills-imagen"></div>
+    </div>
 </header>
+<div class="container-menu">
+  <div class="menu">
+    <div class="elemento" routerLink="/buscarCriterio">Buscar</div>
+    <div class="elemento" routerLink="/juegos">Jugar</div>
+  </div>
+</div>

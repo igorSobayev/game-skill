@@ -1,17 +1,10 @@
 .footer-principal {
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    width: 100%;
-    background-color: rgb(255, 242, 195);
-    padding: 10px;
-}
-
-.footer-principal footer {
-    width: 96%;
-    margin: 0 2% 0 2%;
+  width: 100%;
+  background-color: rgb(255, 242, 195);
+  padding: 10px;
+  margin-top: 200px;
 }
 
 .contenedor-principal {
-    margin-bottom: 100px;
+  margin-bottom: 100px;
 }

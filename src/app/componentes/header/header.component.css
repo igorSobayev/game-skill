@@ -5,29 +5,27 @@
     align-items: center;
     background-color: rgb(149, 149, 241);
     width: 100%;
+    height: 100px;
     /* margin-top: -10px; */
     margin: -10px auto 0 auto;
 }
 
 .logo {
     margin-left: 15px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
 }
 
 .logo-imagen {
-    background-image: url("./../../../assets/resources/img/logo.png");
+    background-image: url("./../../../assets/resources/img/pacman.png");
     background-position: center;
     background-size: cover;
     width: 100px;
-    height: 100px;
+    height: 100%;
     cursor: pointer;
-}
-
-.logo h1 {
-    cursor: pointer;
-    letter-spacing: 10px;
 }
 
 .logo-skills-imagen {
@@ -41,40 +39,75 @@
 .titulo {
     cursor: pointer;
     transition: all 0.7s;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    animation-duration: 2s;
+    animation-name: titulo;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
-.titulo:hover {
+@keyframes titulo {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.3);
+  }
+}
+
+.titulo:hover #game {
     color: rgb(255, 238, 0);
 }
 
-.titulo h1 {
-    margin: 0 0 0 15px;
+.titulo:hover #skill {
+  color: white;
+}
+
+#game {
+  color: white;
+  margin-right: 20px;
+}
+
+#skill {
+  color: yellow;
+}
+
+/* Estilos menu bajo */
+
+.container-menu {
+  width: 100%;
+  background-color: rgb(149, 149, 241);
 }
 
 .menu {
+  border-top: 1px solid white;
     display: flex;
-    align-items: center;
     justify-content: flex-start;
-    width: 20%;
+    width: 100%;
     height: 100%;
 }
 
 .elemento {
-    font-size: 2em;
+    font-size: 3.5em;
     width: 50%;
-    height: 100%;
+    height: 100px;
     text-align: center;
     cursor: pointer;
     transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 7px;
 }
 
 .elemento:hover {
-    background-color: white;
+    background-color: #00528F;
+    color: white;
 }
 
-.logo-skills h1 {
-    cursor: pointer;
-}
+
 
 @media (max-width: 1150px) {
     .menu {
